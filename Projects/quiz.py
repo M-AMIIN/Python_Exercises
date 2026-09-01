@@ -39,3 +39,17 @@ for question in questions:
     question_num = question_num + 1
 
 print(f"GAME OVER! TOTAL POINTS ARE: {score}")
+print()
+print("Correct answers are: ")
+for answer in answers:
+    print(answer, end=" ")
+print()
+
+print("guesses: ", end="")
+for guess in guesses:
+    print(guess, end=" ")
+print()
+
+score = int(score/len(questions)*100)
+print(f"your score is: {score}%")
+
