@@ -28,11 +28,10 @@ while True:
     if userG == random_numb:
         print("CORRECT NUMBER! ")
         break
-    else:
-        if userG > random_numb:
+    elif userG > random_numb:
             print("WRONG NUMBER. You were above the CORRECT number ")
-        else:
-            print("WRONG NUMBER. You were below the CORRECT number ")
+    else:
+        print("WRONG NUMBER. You were below the CORRECT number ")
 
 print(f"You guessed the correct number in {guesscount} guess(es)!")
 
