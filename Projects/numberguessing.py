@@ -24,14 +24,17 @@ while True:
     else:
         print("type a number larger than 0 next time. ")
         continue 
-
+#checks if guess matches random number, if not checks if guess is more or less than the number. 
     if userG == random_numb:
         print("CORRECT NUMBER! ")
         break
     else:
-        print("WRONG NUMBER! ")
+        if userG > random_numb:
+            print("WRONG NUMBER. You were above the CORRECT number ")
+        else:
+            print("WRONG NUMBER. You were below the CORRECT number ")
 
-print(f"You guessed the correct number in {guesscount} guesses!")
+print(f"You guessed the correct number in {guesscount} guess(es)!")
 
     
 
