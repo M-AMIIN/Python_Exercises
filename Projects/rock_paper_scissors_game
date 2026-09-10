@@ -16,24 +16,25 @@ while True:
     randomNumb = random.randint(0,2) # rock [0] paper [1] scissors [2]
 
     opponentPick = options[randomNumb]
-    print("Opponent has picked" + opponentPick + ".")
+    print("Opponent has picked " + opponentPick + ".")
 
     if playerPick == "rock" and opponentPick == "scissors":
         playerWin += 1
         print("You won!")
         print("rock beats scissors!")
-    if playerPick == "paper" and opponentPick == "rock":
+    elif playerPick == "paper" and opponentPick == "rock":
             playerWin += 1
             print("You won!")
             print("paper beats rock!")
-    if playerPick == "scissors" and opponentPick == "paper":
+    elif playerPick == "scissors" and opponentPick == "paper":
                 playerWin += 1
                 print("You won!")
                 print("scissors beats paper!")
     else:
           print("You lost!")
           opponentWin += 1
-        
+
+print(f"You won {playerWin} times and opponent won {opponentWin} times")
 print("Farewell!")
 
 
