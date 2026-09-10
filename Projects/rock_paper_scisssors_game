@@ -1,0 +1,39 @@
+import random
+
+
+playerWin = 0
+opponentWin = 0
+options = ["rock", "paper", "scissors"]
+
+while True:
+    playerPick = input("Write 'rock', 'paper' or 'scissors'. Press E to Exit: ").lower()
+    if playerPick == "e":
+        break
+
+    if playerPick not in options:
+        continue
+
+    randomNumb = random.randint(0,2) # rock [0] paper [1] scissors [2]
+
+    opponentPick = options[randomNumb]
+    print("Opponent has picked" + opponentPick + ".")
+
+    if playerPick == "rock" and opponentPick == "scissors":
+        playerWin += 1
+        print("You won!")
+        print("rock beats scissors!")
+    if playerPick == "paper" and opponentPick == "rock":
+            playerWin += 1
+            print("You won!")
+            print("paper beats rock!")
+    if playerPick == "scissors" and opponentPick == "paper":
+                playerWin += 1
+                print("You won!")
+                print("scissors beats paper!")
+    else:
+          print("You lost!")
+          opponentWin += 1
+        
+print("Farewell!")
+
+
