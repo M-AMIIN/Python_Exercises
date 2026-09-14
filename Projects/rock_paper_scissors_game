@@ -3,6 +3,7 @@ import random
 
 playerWin = 0
 opponentWin = 0
+draw = 0
 options = ["rock", "paper", "scissors"]
 
 while True:
@@ -30,11 +31,14 @@ while True:
                 playerWin += 1
                 print("You won!")
                 print("scissors beats paper!")
+    elif playerPick == opponentPick:
+          print("Draw!")
+          draw += 1
     else:
           print("You lost!")
           opponentWin += 1
 
-print(f"You won {playerWin} times and opponent won {opponentWin} times")
+print(f"You won {playerWin} time(s) and opponent won {opponentWin} time(s) and you picked the same {draw} time(s)")
 print("Farewell!")
 
 
