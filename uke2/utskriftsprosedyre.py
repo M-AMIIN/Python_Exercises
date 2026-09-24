@@ -1,4 +1,5 @@
-
+# Oppgave 1 
+# del 1 og 2
 def hilsen():
     navn = input("Hva er navnet ditt? ")
     bosted = input("Hva er bostedet ditt? ")
